@@ -1,0 +1,36 @@
+//Fake loading
+body {
+  margin: 0;
+  padding: 0;
+}
+.loading {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.circle {
+  height: 5rem;
+  width: 5rem;
+  right: 0px;
+  border: solid 10px rgba(255, 255, 255, 0.5);
+  border-top-color: #dfdfdf;
+  border-radius: 100%;
+}
+.border {
+  transform: rotate(135deg);
+  animation: spin 0.5s steps(2) 0.2s infinite;
+  -webkit-animation: spin 0.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
